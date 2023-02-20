@@ -1,9 +1,7 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
 import * as Yup from "yup";
-import "../../styles/login.scss";
 import { RHFInput } from "../components/RHFInput";
 import useSnackbar from "../hooks/useSnackbar";
 
@@ -12,8 +10,7 @@ type FormValuesProps = {
   password: string;
 };
 
-export default function ContactForm() {
-  const navigate = useNavigate();
+export default function Contact() {
   const { openSnackbar } = useSnackbar();
   const [showPassword, setShowPassword] = useState(false);
 
@@ -44,7 +41,6 @@ export default function ContactForm() {
         localStorage.setItem("email", values?.email);
         localStorage.setItem("name", "Admin User");
         openSnackbar({ type: "success", message: "Login feito com sucesso" });
-        navigate("/dashboard");
       } else {
         console.log("erro ao fazer login");
         openSnackbar({ type: "error" });

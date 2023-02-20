@@ -354,6 +354,27 @@
   resolved "https://registry.yarnpkg.com/@hookform/resolvers/-/resolvers-2.9.11.tgz#9ce96e7746625a89239f68ca57c4f654264c17ef"
   integrity sha512-bA3aZ79UgcHj7tFV7RlgThzwSSHZgvfbt2wprldRkYBcMopdMvHyO17Wwp/twcJasNFischFfS7oz8Katz8DdQ==
 
+"@iconify/icons-ic@^1.2.13":
+  version "1.2.13"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-ic/-/icons-ic-1.2.13.tgz#fd6b1b50b5bd25ad0cbadc85a9107c0bae21add1"
+  integrity sha512-TphrhwOvgd7CTmUhz6jgXF+SPnMtvTm03bZsAYbny2kwq4zlkhr9e16YEyPGMvKhjtTqNooA3iZ9Wa+pZ8moXQ==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/icons-material-symbols@^1.2.27":
+  version "1.2.30"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-material-symbols/-/icons-material-symbols-1.2.30.tgz#167ab632f40c6ed50b99ab6d378b6f5bfe91d24b"
+  integrity sha512-5YCfMw87y9Gmf66S84hl/X3226hM85ciATQ9jNCtYng0GfL5rfyB8u9nBu77Ux7bD2SK8yj5lQIaUvyQnbyxOg==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify/icons-mingcute@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-mingcute/-/icons-mingcute-1.2.4.tgz#2a0827044fa513371d0dd2098631c08fb11fe2c0"
+  integrity sha512-tCrw8vdfdCgbIRNpZFuuMOFuDWVqiArbM0RZ4+S2wTavjmiCQ9LmmwiXF6BuRT9hg/QQwgdTWR6u/qD2/LTVbg==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify/react@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@iconify/react/-/react-4.1.0.tgz#5ea86acae6e209a2f5b1b52922ab85d0d22f9b45"
@@ -361,7 +382,7 @@
   dependencies:
     "@iconify/types" "^2.0.0"
 
-"@iconify/types@^2.0.0":
+"@iconify/types@*", "@iconify/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@iconify/types/-/types-2.0.0.tgz#ab0e9ea681d6c8a1214f30cd741fe3a20cc57f57"
   integrity sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==

@@ -8,8 +8,7 @@
 }
 
 body {
-  background: #f8f8f8;
-  color: #29292e;
+  color: $text-color;
   height: 100vh;
 }
 
@@ -24,10 +23,27 @@ textarea {
   height: 100vh;
 }
 
-.page {
+.app {
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $page-background-color;
+  flex-direction: column;
+}
+
+.section {
+  width: 100%;
+  padding: 40px;
+}
+
+.background-primary {
+  background-color: $primary-background-color;
+}
+
+.background-secondary {
+  background-color: $secondary-background-color;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: $divider-background-color;
 }
