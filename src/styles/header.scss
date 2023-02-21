@@ -11,14 +11,23 @@ ul {
   padding: 24px 40px;
   position: absolute;
   width: 100%;
+
+  ul {
+    display: flex;
+    gap: 40px;
+
+    li {
+      cursor: pointer;
+      font-weight: bold;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
 .socials {
   display: flex;
   gap: 16px;
-
-  li {
-    padding: 8px;
-    background-color: $secondary-background-color;
-  }
 }

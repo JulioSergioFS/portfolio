@@ -3,14 +3,22 @@ import "../styles/header.scss";
 export function Header() {
   return (
     <ul className="header">
-      <li>Home</li>
-      <li>Quem Sou</li>
-      <li>Portfólio</li>
-      <li>Fale Comigo</li>
+      <li>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Portfolio</li>
+          <li>Contact Me</li>
+        </ul>
+      </li>
       <li>
         <ul className="socials">
-          <li></li>
-          <li></li>
+          <li>
+            <img src="/icons/linkedin.svg" />
+          </li>
+          <li>
+            <img src="/icons/github.svg" />
+          </li>
         </ul>
       </li>
     </ul>
