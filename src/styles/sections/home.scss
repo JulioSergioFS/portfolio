@@ -1,3 +1,15 @@
+@use "../_variables" as *;
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
 .home {
   padding-top: 56px;
   height: 500px;
@@ -25,7 +37,7 @@
       border-radius: 8px;
       border: 0;
       color: #fff;
-      background-color: blue;
+      background-color: $primary-color;
     }
   }
 }
@@ -35,5 +47,14 @@
   position: absolute;
   right: 10%;
   top: 10%;
-  filter: drop-shadow(0 0 2em #404040);
+
+  @include keyframes(fade) {
+    0% {
+      filter: drop-shadow(0 0 3em #4c4c53);
+    }
+    100% {
+      filter: drop-shadow(0 0 3em #00000000);
+    }
+  }
+  @include animate(fade, 2s, linear, infinite);
 }

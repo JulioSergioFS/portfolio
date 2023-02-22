@@ -11,7 +11,7 @@ function App() {
   const sections = [
     { component: <Home />, bgColor: "primary" },
     { component: <WhoAmI />, bgColor: "secondary" },
-    { component: <Portfolio />, bgColor: "secondary" },
+    { component: <Portfolio />, bgColor: "primary" },
     { component: <Contact />, bgColor: "secondary" },
   ];
 
@@ -20,9 +20,9 @@ function App() {
       <Header />
       {sections.map((section, index) => (
         <>
-          <div className={`section background-${section.bgColor}`}>
+          <section className={`section background-${section.bgColor}`}>
             {section.component}
-          </div>
+          </section>
           {sections.length !== index + 1 ? <div className="divider" /> : null}
         </>
       ))}

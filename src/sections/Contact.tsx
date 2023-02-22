@@ -4,6 +4,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { RHFInput } from "../components/RHFInput";
 import useSnackbar from "../hooks/useSnackbar";
+import "../styles/sections/contact.scss";
 
 type FormValuesProps = {
   email: string;
@@ -53,28 +54,15 @@ export default function Contact() {
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={handleSubmit(onSubmit)} className="card">
-        <h2 className="title">Bem-vindo!</h2>
-        <RHFInput name="email" placeholder="E-mail" />
-        <RHFInput name="password" type="password" placeholder="Senha" />
-        <p
-          className="highlight-text"
-          onClick={() => navigate("/forgot-password")}
-        >
-          Esqueci minha senha
-        </p>
-        <button className="button-primary" type="submit">
-          Entrar
-        </button>
-        <p>
-          Não tem uma conta?{" "}
-          <b
-            className="highlight-text"
-            onClick={() => navigate("/create-account")}
-          >
-            Criar conta
-          </b>
-        </p>
+      <form onSubmit={handleSubmit(onSubmit)} className="form">
+        <div className="content">
+          <h2 className="title">Contact Me</h2>
+          <RHFInput name="email" placeholder="E-mail" />
+          <RHFInput name="password" type="password" placeholder="Senha" />
+          <button className="button-primary" type="submit">
+            Entrar
+          </button>
+        </div>
       </form>
     </FormProvider>
   );
