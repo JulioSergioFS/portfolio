@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { Header } from "./components/Header";
-import Contact from "./sections/Contact";
+import { AboutMe } from "./sections/AboutMe";
+import { Contact } from "./sections/Contact";
 import { Home } from "./sections/Home";
-import Portfolio from "./sections/Portfolio";
-import WhoAmI from "./sections/WhoAmI";
+import { Portfolio } from "./sections/Portfolio";
 import "./styles/global.scss";
 
 function App() {
   const [count, setCount] = useState(0);
   const sections = [
     { component: <Home />, bgColor: "primary" },
-    { component: <WhoAmI />, bgColor: "secondary" },
+    { component: <AboutMe />, bgColor: "secondary" },
     { component: <Portfolio />, bgColor: "primary" },
     { component: <Contact />, bgColor: "secondary" },
   ];

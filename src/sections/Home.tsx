@@ -2,11 +2,12 @@ import "../styles/sections/home.scss";
 
 export function Home() {
   return (
-    <div className="home">
+    <div className="content">
       <div className="info">
         <h2>Hi, I'm Julio!</h2>
-        <p>Bem-vindo!</p>
-        <button>Bem-vindo!</button>
+        <p>I'm a front-end developer and freelancer</p>
+        <button>Contact Me</button>
+        <button>Download Resume</button>
       </div>
       <img
         className="my-photo"

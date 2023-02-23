@@ -11,7 +11,7 @@ type FormValuesProps = {
   password: string;
 };
 
-export default function Contact() {
+export function Contact() {
   const { openSnackbar } = useSnackbar();
   const [showPassword, setShowPassword] = useState(false);
 
@@ -53,17 +53,19 @@ export default function Contact() {
   };
 
   return (
-    <FormProvider {...methods}>
-      <form onSubmit={handleSubmit(onSubmit)} className="form">
-        <div className="content">
-          <h2 className="title">Contact Me</h2>
-          <RHFInput name="email" placeholder="E-mail" />
-          <RHFInput name="password" type="password" placeholder="Senha" />
-          <button className="button-primary" type="submit">
-            Entrar
-          </button>
-        </div>
-      </form>
-    </FormProvider>
+    <div className="content">
+      <FormProvider {...methods}>
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
+          <div className="content">
+            <h2 className="title">Contact Me</h2>
+            <RHFInput name="email" placeholder="E-mail" />
+            <RHFInput name="password" type="password" placeholder="Senha" />
+            <button className="button-primary" type="submit">
+              Entrar
+            </button>
+          </div>
+        </form>
+      </FormProvider>
+    </div>
   );
 }
