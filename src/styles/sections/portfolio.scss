@@ -1,0 +1,9 @@
+@use "../_variables" as *;
+
+.experience-text {
+  display: flex;
+
+  div {
+    width: 50%;
+  }
+}

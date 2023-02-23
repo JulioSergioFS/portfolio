@@ -10,7 +10,7 @@
   }
 }
 
-.home {
+.content {
   padding-top: 56px;
   height: 500px;
   position: relative;
@@ -48,13 +48,5 @@
   right: 10%;
   top: 10%;
 
-  @include keyframes(fade) {
-    0% {
-      filter: drop-shadow(0 0 3em #4c4c53);
-    }
-    100% {
-      filter: drop-shadow(0 0 3em #00000000);
-    }
-  }
-  @include animate(fade, 2s, linear, infinite);
+  filter: drop-shadow(0 0 10em #313194);
 }
