@@ -368,6 +368,13 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify/icons-mdi@^1.2.41":
+  version "1.2.41"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-mdi/-/icons-mdi-1.2.41.tgz#f6797c4b4d5aeab128bb695242d47c0236fda737"
+  integrity sha512-uQ6S+rvJBLtYJaT7As9fE8Nx3wh8bta+jslScIR7qDq97skHUOJnRQyA+FRczZQCoi5iQ2W5t3IWBNe6d0pxTw==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify/icons-mingcute@^1.2.4":
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/@iconify/icons-mingcute/-/icons-mingcute-1.2.4.tgz#2a0827044fa513371d0dd2098631c08fb11fe2c0"

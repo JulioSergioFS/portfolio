@@ -1,3 +1,6 @@
+import githubIcon from "@iconify/icons-mdi/github";
+import linkedinIcon from "@iconify/icons-mdi/linkedin";
+import { Icon } from "@iconify/react";
 import "../styles/header.scss";
 
 export function Header() {
@@ -14,10 +17,10 @@ export function Header() {
       <li>
         <ul className="socials">
           <li>
-            <img src="/icons/linkedin.svg" />
+            <Icon icon={linkedinIcon} color="#E3E3E3" height={24} />
           </li>
           <li>
-            <img src="/icons/github.svg" />
+            <Icon icon={githubIcon} color="#E3E3E3" height={24} />
           </li>
         </ul>
       </li>
