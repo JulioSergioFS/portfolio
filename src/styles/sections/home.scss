@@ -12,16 +12,18 @@
 
 .home {
   padding-top: 56px;
-  height: 500px;
+  height: 540px;
   position: relative;
   align-items: center;
   width: 100% !important;
   background: linear-gradient(
       0deg,
-      rgba(11, 2, 33, 0.9) 0%,
-      rgba(11, 2, 33, 0.4) 100%
+      rgba(2, 2, 3, 0.9) 0%,
+      rgba(12, 10, 58, 0.4) 100%
     ),
     url(https://imgur.com/s671HHZ.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .info {
     display: flex;
@@ -49,8 +51,20 @@
       background-color: $primary-color;
     }
   }
-}
 
-.background {
-  height: 450px;
+  .down-arrow {
+    position: absolute;
+    cursor: pointer;
+
+    @include keyframes(fade) {
+      0%,
+      100% {
+        bottom: 4px;
+      }
+      50% {
+        bottom: 12px;
+      }
+    }
+    @include animate(fade, 1.5s, linear, infinite);
+  }
 }

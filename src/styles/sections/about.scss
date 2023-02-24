@@ -8,11 +8,27 @@
   div {
     width: 50%;
   }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .read-link {
+      width: fit-content;
+      cursor: pointer;
+      color: $highlight-text-color;
+    }
+  }
 }
 
-.my-photo {
-  height: 450px;
-  width: fit-content;
+.image-container {
+  display: flex;
+  justify-content: center;
 
-  filter: drop-shadow(0 0 10em #313194);
+  .my-photo {
+    height: 380px;
+    width: fit-content;
+
+    filter: drop-shadow(0 0 3em #1e1e41);
+  }
 }
