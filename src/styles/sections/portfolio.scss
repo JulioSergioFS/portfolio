@@ -17,14 +17,41 @@
       flex-direction: column;
       width: 100%;
 
+      .responsabilities-list {
+        li::before {
+          content: "\2022";
+          color: $primary-color;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+        }
+      }
+
+      .company-list {
+        padding: 8px 0;
+
+        .company {
+          display: flex;
+          gap: 16px;
+
+          .logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+          }
+        }
+      }
+
       ul {
         display: flex;
         flex-direction: column;
         gap: 8px;
+      }
 
-        li {
-          margin-left: 20px;
-        }
+      a {
+        cursor: pointer;
+        font-weight: 600;
+        color: $highlight-text-color;
       }
     }
   }
