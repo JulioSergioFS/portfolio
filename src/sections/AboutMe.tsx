@@ -28,7 +28,7 @@ export function AboutMe() {
       </div>
       <div className="text">
         <h2 className="title">About me</h2>
-        <div className="text-content">
+        <div className="text-content text-secondary">
           <p>
             I am a Junior developer with almost 2 years of formal work
             experience seeking a new opportunity.

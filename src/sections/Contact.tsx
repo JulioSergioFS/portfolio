@@ -59,7 +59,9 @@ export function Contact() {
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <div className="fields">
             <h2 className="title">Contact Me</h2>
-            <p className="text">Fill in the fields below to get in contact</p>
+            <p className="text text-secondary">
+              Fill in the fields below to get in contact
+            </p>
             <div className="first-row">
               <RHFInput
                 name="name"

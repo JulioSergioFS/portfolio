@@ -11,7 +11,9 @@ export function Home() {
     <div className="home content">
       <div className="info">
         <h2>Hi, I'm Julio!</h2>
-        <p>I'm a front-end developer and freelancer</p>
+        <p className="text text-secondary">
+          I'm a front-end developer and freelancer
+        </p>
       </div>
       <Icon
         icon={keyboardArrowDownRounded}
