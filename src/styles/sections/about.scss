@@ -22,11 +22,27 @@
   .text {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+
+    .text-content {
+      gap: 24px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
     .read-link {
       width: fit-content;
       cursor: pointer;
       color: $highlight-text-color;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logos {
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
     }
   }
 }
@@ -34,9 +50,10 @@
 .image-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   .my-photo {
-    height: 380px;
+    height: 320px;
     width: fit-content;
     border: 1px solid $primary-color;
     border-radius: 50%;

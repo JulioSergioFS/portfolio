@@ -34,8 +34,9 @@ ul {
 }
 
 .header-background {
-  background-color: $primary-background-color;
+  background-color: rgba($color: $primary-background-color, $alpha: 0.8);
   border-bottom: 2px solid $divider-background-color;
+  backdrop-filter: blur(20px);
 }
 
 .socials {
