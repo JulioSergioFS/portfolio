@@ -8,10 +8,15 @@ ul {
   display: flex;
   gap: 16px;
   justify-content: space-between;
-  padding: 24px 40px;
-  position: absolute;
+  padding: 16px 40px;
+  position: fixed;
   width: 100%;
   z-index: 10;
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
 
   ul {
     display: flex;
@@ -26,6 +31,11 @@ ul {
       }
     }
   }
+}
+
+.header-background {
+  background-color: $primary-background-color;
+  border-bottom: 2px solid $divider-background-color;
 }
 
 .socials {
