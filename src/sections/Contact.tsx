@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { RHFInput } from "../components/RHFInput";
+import { RHFTextArea } from "../components/RHFTextArea";
 import useSnackbar from "../hooks/useSnackbar";
 import "../styles/sections/contact.scss";
 
@@ -56,12 +57,36 @@ export function Contact() {
     <div className="content">
       <FormProvider {...methods}>
         <form onSubmit={handleSubmit(onSubmit)} className="form">
-          <div className="content">
+          <div className="fields">
             <h2 className="title">Contact Me</h2>
-            <RHFInput name="email" placeholder="E-mail" />
-            <RHFInput name="password" type="password" placeholder="Senha" />
-            <button className="button-primary" type="submit">
-              Entrar
+            <p className="text">Fill in the fields below to get in contact</p>
+            <div className="first-row">
+              <RHFInput
+                name="name"
+                label="Name"
+                placeholder="Write your name"
+                className="name"
+              />
+              <RHFInput
+                name="email"
+                label="E-mail"
+                placeholder="email@example.com"
+                className="email"
+              />
+            </div>
+            <RHFInput
+              name="subject"
+              label="Subject"
+              placeholder="Write the subject here"
+            />
+            <RHFTextArea
+              name="message"
+              label="Message"
+              placeholder="Write your message here"
+              className="message"
+            />
+            <button className="button-primary send" type="submit">
+              Send Message
             </button>
           </div>
         </form>

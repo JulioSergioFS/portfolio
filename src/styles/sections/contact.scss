@@ -1,11 +1,17 @@
 @use "../_variables" as *;
 $input-border-color: rgb(213, 222, 229);
 
-input {
+input,
+textarea {
   padding: 12px;
   border-radius: 4px;
   border: none;
-  background-color: $primary-background-color;
+  background-color: $primary-background-color !important;
+
+  &:-webkit-autofill {
+    box-shadow: $primary-dark-color 0px 0px 0px 100px inset;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+  }
 }
 
 button {
@@ -25,12 +31,38 @@ button {
   align-items: center;
   flex-direction: column;
 
-  .content {
+  .fields {
     display: flex;
     flex-direction: column;
-    width: 350px;
-    gap: 12px;
+    width: 600px;
+    gap: 16px;
     height: min-content;
+
+    .text {
+      text-align: center;
+      padding-bottom: 16px;
+    }
+
+    .first-row {
+      display: flex;
+      gap: 16px;
+
+      .name {
+        width: 50%;
+      }
+
+      .email {
+        width: 50%;
+      }
+    }
+
+    .message {
+      min-height: 120px;
+    }
+
+    .send {
+      margin-top: 8px;
+    }
   }
 }
 
@@ -47,4 +79,10 @@ button {
 .button-primary {
   background-color: $primary-color;
   color: $button-text-color;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

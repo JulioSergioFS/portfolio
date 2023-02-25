@@ -6,7 +6,7 @@ export function AboutMe() {
       <div className="image-container">
         <img
           className="my-photo"
-          src="https://imgur.com/2wgjaKg.png"
+          src="https://i.imgur.com/dXUCZM0.png"
           alt="My photo (creator of this website)"
         />
       </div>

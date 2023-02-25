@@ -18,8 +18,8 @@
   width: 100% !important;
   background: linear-gradient(
       0deg,
-      rgba(2, 2, 3, 0.6) 0%,
-      rgba(12, 10, 58, 0.4) 100%
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba($color: $primary-color, $alpha: 0.1) 100%
     ),
     url(https://imgur.com/s671HHZ.jpg);
   background-repeat: no-repeat;

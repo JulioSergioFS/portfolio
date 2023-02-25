@@ -1,16 +1,15 @@
 import { useFormContext } from "react-hook-form";
 
-export function RHFInput({
+export function RHFTextArea({
   name,
-  type,
   label,
   options,
   placeholder,
   className,
 }: {
   name: string;
-  type?: string;
   label: string;
+  type?: string;
   options?: any;
   placeholder: string;
   className?: string;
@@ -22,8 +21,7 @@ export function RHFInput({
   return (
     <div className={`${className || ""} input`}>
       <label>{label}</label>
-      <input
-        type={type || "text"}
+      <textarea
         placeholder={placeholder}
         {...register(name, options)}
         style={{ width: "100%", height: "100%" }}
