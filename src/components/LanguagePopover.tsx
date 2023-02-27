@@ -1,5 +1,8 @@
+import keyboardArrowDownRounded from "@iconify/icons-material-symbols/keyboard-arrow-down-rounded";
+import { Icon } from "@iconify/react";
 import { useState } from "react";
 import useLocales from "../hooks/useLocales";
+import { Dialog } from "./Dialog";
 
 // ----------------------------------------------------------------------
 
@@ -9,12 +12,18 @@ export default function LanguagePopover() {
 
   return (
     <div className="languages-container">
-      <div className="dialog-button" onClick={() => setOpen(!open)}>
-        {currentLang.icon}
-      </div>
-
-      <div className={`dialog-list${open ? " open" : ""}`}>
-        {allLang.map((option) => (
+      {!open ? (
+        <div className="dialog-button" onClick={() => setOpen(!open)}>
+          {currentLang.icon}
+        </div>
+      ) : null}
+      <Dialog
+        show={open}
+        onClickOutside={() => {
+          setOpen(false);
+        }}
+      >
+        {allLang.map((option, index) => (
           <div
             key={option.value}
             className="item"
@@ -26,11 +35,16 @@ export default function LanguagePopover() {
             // style={{ py: 1, px: 2.5 }}
           >
             <div>{option.icon}</div>
-
-            <p>{option.label}</p>
+            {index === 0 ? (
+              <Icon
+                icon={keyboardArrowDownRounded}
+                height={28}
+                className="down-arrow"
+              />
+            ) : null}
           </div>
         ))}
-      </div>
+      </Dialog>
     </div>
   );
 }

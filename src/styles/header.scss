@@ -41,14 +41,16 @@ ul {
 
 .languages-container {
   position: relative;
+  min-height: 28px;
+  min-width: 28px;
 
   .dialog-button {
     height: 28px;
   }
 
   .dialog-list {
-    margin-top: 16px;
     position: absolute;
+    left: 0px !important;
     background-color: $secondary-background-color;
     color: $text-color;
     border: 2px solid $divider-background-color;
@@ -59,10 +61,10 @@ ul {
 
     .item {
       display: flex;
-      gap: 8px;
-      height: 34px;
-      width: 136px;
-      padding: 8px;
+      gap: 4px;
+      height: 40px;
+      width: 63px;
+      padding: 8px 0 8px 8px;
 
       &:hover {
         background-color: rgba($color: $primary-color, $alpha: 0.3);
