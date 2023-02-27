@@ -15,9 +15,12 @@
   "dependencies": {
     "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^2.8.8",
+    "@iconify/icons-emojione-v1": "^1.2.6",
     "@iconify/icons-mdi": "^1.2.41",
     "@iconify/icons-skill-icons": "^1.2.1",
     "framer-motion": "^9.0.2",
+    "i18next": "^22.4.10",
+    "i18next-browser-languagedetector": "^7.0.1",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

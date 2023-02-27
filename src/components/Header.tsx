@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useScrollSections } from "react-scroll-section";
 import { sections } from "../constants/header";
 import "../styles/header.scss";
+import LanguagePopover from "./LanguagePopover";
 
 export function Header() {
   const scrollSection = useScrollSections();
@@ -41,6 +42,9 @@ export function Header() {
       </li>
       <li className="menu">
         <ul className="socials">
+          <li>
+            <LanguagePopover />
+          </li>
           <li>
             <Icon icon={linkedinIcon} color="#E3E3E3" height={24} />
           </li>
