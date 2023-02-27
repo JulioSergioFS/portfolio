@@ -1,5 +1,64 @@
 {
-  "test": {
-    "title": "Este é o teste"
+  "header": {
+    "home": "Home",
+    "about": "Sobre",
+    "portfolio": "Portfólio",
+    "contact": "Entre em Contato"
+  },
+  "sections": {
+    "home": {
+      "title": "Olá, eu sou o Julio!",
+      "subtitle": "Sou um desenvolvedor front-end e freelancer"
+    },
+    "about": {
+      "title": "Sobre mim",
+      "text1": "Sou um programador Júnior com quase 2 anos de experiência de trabalho formal buscando uma nova oportunidade.",
+      "text2": "Desenvolvi aplicações para diversas empresas, tenho experiência em trabalhar em grupo e lidar com problemas. Atualmente estou aprofundando meus conhecimentos em ReactJS e Typescript.",
+      "link": "Leia meus artigos",
+      "alt": "Minha foto (criador deste site)"
+    },
+    "portfolio": {
+      "title": "Portfólio"
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "subtitle": "Preencha os campos abaixo para entrar em contato",
+      "fields": {
+        "name": {
+          "label": "Nome",
+          "placeholder": "Escreva seu nome",
+          "errors": {
+            "required": "O nome é obrigatório"
+          }
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "email@exemplo.com",
+          "errors": {
+            "email": "O e-mail deve ser um endereço de e-mail válido",
+            "required": "O e-mail é obrigatório"
+          }
+        },
+        "subject": {
+          "label": "Assunto",
+          "placeholder": "Escreva o assunto aqui",
+          "errors": {
+            "required": "O assunto é obrigatório"
+          }
+        },
+        "message": {
+          "label": "Mensagem",
+          "placeholder": "Escreva sua mensagem aqui",
+          "errors": {
+            "required": "A mensagem é obrigatória"
+          }
+        }
+      },
+      "button": "Enviar mensagem",
+      "messages": {
+        "success": "Email enviado com successo",
+        "wrong": "Erro ao enviar email"
+      }
+    }
   }
 }

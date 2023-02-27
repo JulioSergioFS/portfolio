@@ -4,6 +4,7 @@ import { FormProvider, useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { RHFInput } from "../components/RHFInput";
 import { RHFTextArea } from "../components/RHFTextArea";
+import useLocales from "../hooks/useLocales";
 import useSnackbar from "../hooks/useSnackbar";
 import "../styles/sections/contact.scss";
 
@@ -13,19 +14,30 @@ type FormValuesProps = {
 };
 
 export function Contact() {
+  const { t } = useLocales();
   const { openSnackbar } = useSnackbar();
   const [showPassword, setShowPassword] = useState(false);
 
   const ContactSchema = Yup.object().shape({
+    name: Yup.string().required(
+      t("sections.contact.fields.name.errors.required")
+    ),
     email: Yup.string()
-      .email("O e-mail deve ser um endereço de e-mail válido")
-      .required("O e-mail é obrigatório"),
-    password: Yup.string().required("Senha é obrigatória"),
+      .email(t("sections.contact.fields.email.errors.email"))
+      .required(t("sections.contact.fields.email.errors.required")),
+    subject: Yup.string().required(
+      t("sections.contact.fields.subject.errors.required")
+    ),
+    message: Yup.string().required(
+      t("sections.contact.fields.message.errors.required")
+    ),
   });
 
   const defaultValues = {
-    email: localStorage.getItem("login") || undefined,
-    password: undefined,
+    name: "",
+    email: undefined,
+    subject: "",
+    message: "",
   };
 
   const methods = useForm<FormValuesProps>({
@@ -39,13 +51,17 @@ export function Contact() {
   const onSubmit = async (data: FormValuesProps) => {
     try {
       if (data.email === "admin@gmail.com" && data.password === "password") {
-        console.log("login feito com sucesso");
         localStorage.setItem("email", values?.email);
         localStorage.setItem("name", "Admin User");
-        openSnackbar({ type: "success", message: "Login feito com sucesso" });
+        openSnackbar({
+          type: "success",
+          message: t("sections.contact.messages.success") as string,
+        });
       } else {
-        console.log("erro ao fazer login");
-        openSnackbar({ type: "error" });
+        openSnackbar({
+          type: "error",
+          message: t("sections.contact.messages.error") as string,
+        });
       }
       console.log(data);
     } catch (error) {
@@ -58,37 +74,37 @@ export function Contact() {
       <FormProvider {...methods}>
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <div className="fields">
-            <h2 className="title">Contact Me</h2>
+            <h2 className="title">{t("sections.contact.title")}</h2>
             <p className="text text-secondary">
-              Fill in the fields below to get in contact
+              {t("sections.contact.subtitle")}
             </p>
             <div className="first-row">
               <RHFInput
                 name="name"
-                label="Name"
-                placeholder="Write your name"
+                label={t("sections.contact.fields.name.label")}
+                placeholder={t("sections.contact.fields.name.placeholder")}
                 className="name"
               />
               <RHFInput
                 name="email"
-                label="E-mail"
-                placeholder="email@example.com"
+                label={t("sections.contact.fields.email.label")}
+                placeholder={t("sections.contact.fields.email.placeholder")}
                 className="email"
               />
             </div>
             <RHFInput
               name="subject"
-              label="Subject"
-              placeholder="Write the subject here"
+              label={t("sections.contact.fields.subject.label")}
+              placeholder={t("sections.contact.fields.subject.placeholder")}
             />
             <RHFTextArea
               name="message"
-              label="Message"
-              placeholder="Write your message here"
+              label={t("sections.contact.fields.message.label")}
+              placeholder={t("sections.contact.fields.message.placeholder")}
               className="message"
             />
             <button className="button-primary send" type="submit">
-              Send Message
+              {t("sections.contact.button")}
             </button>
           </div>
         </form>

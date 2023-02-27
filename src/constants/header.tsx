@@ -4,8 +4,23 @@ import { Home } from "../sections/Home";
 import { Portfolio } from "../sections/Portfolio";
 
 export const sections = [
-  { id: "1", name: "Home", component: <Home />, bgColor: "secondary" },
-  { id: "2", name: "About", component: <AboutMe />, bgColor: "secondary" },
-  { id: "3", name: "Portfolio", component: <Portfolio />, bgColor: "primary" },
-  { id: "4", name: "Contact Me", component: <Contact />, bgColor: "secondary" },
+  { id: "1", name: "header.home", component: <Home />, bgColor: "secondary" },
+  {
+    id: "2",
+    name: "header.about",
+    component: <AboutMe />,
+    bgColor: "secondary",
+  },
+  {
+    id: "3",
+    name: "header.portfolio",
+    component: <Portfolio />,
+    bgColor: "primary",
+  },
+  {
+    id: "4",
+    name: "header.contact",
+    component: <Contact />,
+    bgColor: "secondary",
+  },
 ];

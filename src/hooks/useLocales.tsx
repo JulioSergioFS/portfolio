@@ -10,13 +10,11 @@ const LANGS = [
   {
     label: "English",
     value: "en",
-    // systemValue: enUS,
     icon: <Icon icon={flagForUnitedKingdom} height="100%" />,
   },
   {
     label: "Português",
     value: "pt_Br",
-    // systemValue: ptBR,
     icon: <Icon icon={flagForBrazil} height="100%" />,
   },
 ];
@@ -31,9 +29,14 @@ export default function useLocales() {
     i18n.changeLanguage(newlang);
   };
 
+  const t = (name: string) => {
+    const translation = translate(name);
+    return (translation as string) || "name does not exist";
+  };
+
   return {
     onChangeLang: handleChangeLanguage,
-    translate,
+    t,
     currentLang,
     allLang: LANGS,
   };

@@ -28,7 +28,10 @@ export function RHFInput({
         {...register(name, options)}
         style={{ width: "100%", height: "100%" }}
       />
-      {/* {errors ? <p style={{ color: "red" }}>{errors[name]?.message}</p> : null} */}
+      {"string" === typeof errors[name]?.message ? (
+        // @ts-ignore
+        <p style={{ color: "red" }}>{errors[name]?.message}</p>
+      ) : null}
     </div>
   );
 }

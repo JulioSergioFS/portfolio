@@ -2,18 +2,18 @@ import keyboardArrowDownRounded from "@iconify/icons-material-symbols/keyboard-a
 import { Icon } from "@iconify/react";
 import { useScrollSection } from "react-scroll-section";
 import { sections } from "../constants/header";
+import useLocales from "../hooks/useLocales";
 import "../styles/sections/home.scss";
 
 export function Home() {
+  const { t } = useLocales();
   const section2 = useScrollSection(sections[1].id);
 
   return (
     <div className="home content">
       <div className="info">
-        <h2>Hi, I'm Julio!</h2>
-        <p className="text text-secondary">
-          I'm a front-end developer and freelancer
-        </p>
+        <h2>{t("sections.home.title")}</h2>
+        <p className="text text-secondary">{t("sections.home.subtitle")}</p>
       </div>
       <Icon
         icon={keyboardArrowDownRounded}

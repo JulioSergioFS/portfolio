@@ -10,6 +10,11 @@ export default function LanguagePopover() {
   const [open, setOpen] = useState(false);
   const { allLang, currentLang, onChangeLang } = useLocales();
 
+  const sortedLangs = [
+    ...allLang.filter(({ label }) => currentLang.label === label),
+    ...allLang.filter(({ label }) => currentLang.label !== label),
+  ];
+
   return (
     <div className="languages-container">
       {!open ? (
@@ -23,7 +28,7 @@ export default function LanguagePopover() {
           setOpen(false);
         }}
       >
-        {allLang.map((option, index) => (
+        {sortedLangs.map((option, index) => (
           <div
             key={option.value}
             className="item"

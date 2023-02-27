@@ -4,10 +4,12 @@ import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
 import { useScrollSections } from "react-scroll-section";
 import { sections } from "../constants/header";
+import useLocales from "../hooks/useLocales";
 import "../styles/header.scss";
 import LanguagePopover from "./LanguagePopover";
 
 export function Header() {
+  const { t } = useLocales();
   const scrollSection = useScrollSections();
   const [hasBackground, setHasBackground] = useState(false);
   const offsetHeightBackground = 450;
@@ -35,7 +37,7 @@ export function Header() {
         <ul>
           {sections.map((item, index) => (
             <li key={item.id} onClick={scrollSection[index]?.onClick}>
-              {item.name}
+              {t(item.name)}
             </li>
           ))}
         </ul>
@@ -46,10 +48,17 @@ export function Header() {
             <LanguagePopover />
           </li>
           <li>
-            <Icon icon={linkedinIcon} color="#E3E3E3" height={24} />
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/julio-sergio-ferreira-silva/"
+            >
+              <Icon icon={linkedinIcon} color="#E3E3E3" height={24} />
+            </a>
           </li>
           <li>
-            <Icon icon={githubIcon} color="#E3E3E3" height={24} />
+            <a target="_blank" href="https://github.com/JulioSergioFS/">
+              <Icon icon={githubIcon} color="#E3E3E3" height={24} />
+            </a>
           </li>
         </ul>
       </li>

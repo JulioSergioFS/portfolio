@@ -1,5 +1,64 @@
 {
-  "test": {
-    "title": "This it the title"
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact Me"
+  },
+  "sections": {
+    "home": {
+      "title": "Hi, I'm Julio!",
+      "subtitle": "I'm a front-end developer and freelancer"
+    },
+    "about": {
+      "title": "About me",
+      "text1": "I am a Junior developer with almost 2 years of formal work experience seeking a new opportunity.",
+      "text2": "I have developed applications for various companies, I have experience working in a team and dealing with problems. Currently, I am deepening my knowledge in ReactJS and TypeScript.",
+      "link": "Read my articles",
+      "alt": "My photo (creator of this website)"
+    },
+    "portfolio": {
+      "title": "Portfolio"
+    },
+    "contact": {
+      "title": "Contact Me",
+      "subtitle": "Fill in the fields below to get in contact",
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Write your name",
+          "errors": {
+            "required": "Name is mandatory"
+          }
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "email@example.com",
+          "errors": {
+            "email": "E-mail must be a valid email address",
+            "required": "E-mail is mandatory"
+          }
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Write the subject here",
+          "errors": {
+            "required": "Subject is mandatory"
+          }
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Write your message here",
+          "errors": {
+            "required": "Message is mandatory"
+          }
+        }
+      },
+      "button": "Send Message",
+      "messages": {
+        "success": "Email successfully sent",
+        "wrong": "Error sending email"
+      }
+    }
   }
 }

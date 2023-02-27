@@ -1,9 +1,12 @@
+import useLocales from "../hooks/useLocales";
 import "../styles/sections/portfolio.scss";
 
 export function Portfolio() {
+  const { t } = useLocales();
+
   return (
     <div className="content">
-      <h2 className="title">Portfolio</h2>
+      <h2 className="title">{t("sections.portfolio.title")}</h2>
       <div className="experience-text">
         <div className="column card">
           <h3 className="subtitle">Formal Work</h3>
