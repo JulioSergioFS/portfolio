@@ -8,19 +8,45 @@ function App() {
     <ScrollingProvider scrollBehavior="smooth">
       <div className="app">
         <Header />
-        {sections.map((section, index) => (
-          <Section id={(index + 1).toString()} key={index}>
-            <section
-              className={`section background-${section.bgColor}`}
+        <Section id="1">
+          <section
+            className="section"
+            style={{
+              height: "540px",
+              padding: 0,
+            }}
+          >
+            <div
               style={{
-                ...(index === 0 && { padding: 0 }),
+                width: "100%",
+                height: "100%",
+                position: "fixed",
+                zIndex: 1,
               }}
             >
-              {section.component}
-            </section>
-            {sections.length !== index + 1 ? <div className="divider" /> : null}
-          </Section>
-        ))}
+              {sections[0].component}
+            </div>
+          </section>
+          <div className="divider" />
+        </Section>
+        {sections.map((section, index) =>
+          index != 0 ? (
+            <Section
+              id={(index + 1).toString()}
+              key={index}
+              style={{
+                zIndex: 2,
+              }}
+            >
+              <section className={`section background-${section.bgColor}`}>
+                {section.component}
+              </section>
+              {sections.length !== index + 1 ? (
+                <div className="divider" />
+              ) : null}
+            </Section>
+          ) : null
+        )}
       </div>
     </ScrollingProvider>
   );
