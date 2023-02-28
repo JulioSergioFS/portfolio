@@ -1,4 +1,5 @@
 @use "variables" as *;
+@import "media-queries";
 
 ul {
   list-style: none;
@@ -21,6 +22,10 @@ ul {
   ul {
     display: flex;
     gap: 40px;
+
+    @include mobile {
+      gap: 28px;
+    }
 
     li {
       cursor: pointer;
@@ -46,6 +51,10 @@ ul {
 
   .dialog-button {
     height: 28px;
+
+    @include mobile {
+      height: 32px;
+    }
   }
 
   .dialog-list {

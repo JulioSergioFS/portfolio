@@ -1,4 +1,5 @@
 @use "../_variables" as *;
+@import "../media-queries";
 $input-border-color: rgb(213, 222, 229);
 
 input,
@@ -34,9 +35,17 @@ button {
   .fields {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 700px;
     gap: 16px;
     height: min-content;
+
+    @include tablet {
+      width: 600px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
 
     .text {
       text-align: center;
@@ -47,12 +56,24 @@ button {
       display: flex;
       gap: 16px;
 
+      @include mobile {
+        flex-direction: column;
+      }
+
       .name {
         width: 50%;
+
+        @include mobile {
+          width: 100%;
+        }
       }
 
       .email {
         width: 50%;
+
+        @include mobile {
+          width: 100%;
+        }
       }
     }
 

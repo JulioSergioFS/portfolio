@@ -9,13 +9,7 @@ function App() {
       <div className="app">
         <Header />
         <Section id="1">
-          <section
-            className="section"
-            style={{
-              height: "540px",
-              padding: 0,
-            }}
-          >
+          <section className="section home-section">
             <div
               style={{
                 width: "100%",
@@ -27,7 +21,6 @@ function App() {
               {sections[0].component}
             </div>
           </section>
-          <div className="divider" />
         </Section>
         {sections.map((section, index) =>
           index != 0 ? (
@@ -38,12 +31,10 @@ function App() {
                 zIndex: 2,
               }}
             >
+              {index !== 0 ? <div className="divider" /> : null}
               <section className={`section background-${section.bgColor}`}>
                 {section.component}
               </section>
-              {sections.length !== index + 1 ? (
-                <div className="divider" />
-              ) : null}
             </Section>
           ) : null
         )}

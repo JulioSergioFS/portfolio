@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import { projects } from "../constants/project";
 import useLocales from "../hooks/useLocales";
@@ -5,6 +6,11 @@ import "../styles/sections/portfolio.scss";
 
 export function Portfolio() {
   const { t } = useLocales();
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
+
+  useEffect(() => {
+    window.onresize = () => setIsMobile(window.innerWidth <= 1100);
+  }, [window.innerWidth]);
 
   return (
     <div className="content">
@@ -17,7 +23,7 @@ export function Portfolio() {
         infiniteLoop
         showThumbs={false}
         centerMode
-        centerSlidePercentage={30}
+        centerSlidePercentage={isMobile ? undefined : 30}
         interval={6000}
         showStatus={false}
         renderIndicator={(onClickHandler, isSelected, index, label) => (

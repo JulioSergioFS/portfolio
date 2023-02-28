@@ -43,7 +43,7 @@ export function AboutMe() {
         </div>
         <div className="logos">
           {logos.map((logo, index) => (
-            <Icon icon={logo} height={48} />
+            <Icon key={index} icon={logo} height={48} />
           ))}
         </div>
       </div>
