@@ -51,8 +51,6 @@ export function Contact() {
   const onSubmit = async (data: FormValuesProps) => {
     try {
       if (data.email === "admin@gmail.com" && data.password === "password") {
-        localStorage.setItem("email", values?.email);
-        localStorage.setItem("name", "Admin User");
         openSnackbar({
           type: "success",
           message: t("sections.contact.messages.success") as string,

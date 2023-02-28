@@ -26,7 +26,7 @@ export function RHFInput({
         type={type || "text"}
         placeholder={placeholder}
         {...register(name, options)}
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "42px" }}
       />
       {"string" === typeof errors[name]?.message ? (
         // @ts-ignore
