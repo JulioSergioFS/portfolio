@@ -18,7 +18,16 @@
       "alt": "My photo (creator of this website)"
     },
     "portfolio": {
-      "title": "Portfolio"
+      "title": "Portfolio",
+      "subtitle": "Working as an intern and front-end developer, I worked on several projects for different companies. Here is the list below.",
+      "description": {
+        "gonew": "Website for online courses and video lessons including a blog with student posts",
+        "smart-monitor": "Real-time factory machinery management application",
+        "bbx": "Landing page with quiz, purchase and payment sessions",
+        "atelie": "Custom e-commerce website with payment, delivery and reports sessions",
+        "roncador": "Workplace safety quiz, with questions CRUD",
+        "custom-crud": "Package for automating the creation of CRUDs using Material UI"
+      }
     },
     "contact": {
       "title": "Contact Me",

@@ -12,12 +12,14 @@ body {
   height: 100vh;
 }
 
+a,
 body,
 input,
 button,
 textarea {
   font: 400 16px "Roboto", sans-serif;
   color: $text-color;
+  text-decoration: none;
 }
 
 label {
@@ -28,13 +30,10 @@ h3 {
   font-size: 1.5rem;
 }
 
-h4 {
-  font-size: 1.2rem;
-}
-
 a,
 b,
-p {
+p,
+h4 {
   font-size: 1.2rem;
 }
 
@@ -90,4 +89,13 @@ button {
 
 .text-secondary {
   color: $secondary-text-color;
+}
+
+.redirect-link {
+  width: fit-content;
+  cursor: pointer;
+  color: $highlight-text-color;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
 }

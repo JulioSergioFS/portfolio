@@ -18,7 +18,16 @@
       "alt": "Minha foto (criador deste site)"
     },
     "portfolio": {
-      "title": "Portfólio"
+      "title": "Portfólio",
+      "subtitle": "Trabalhando como estagiário e desenvolvedor front-end, trabalhei em diversos projetos para diversar empresas. Segue a lista abaixo.",
+      "description": {
+        "gonew": "Site de cursos online e vídeoaulas incluindo um blog com posts dos alunos",
+        "smart-monitor": "Aplicação de gerenciamento de máquinário de fábricas em tempo real",
+        "bbx": "Landing page com sessões de questionário, compra e pagamento",
+        "atelie": "Site de comércio eletrônico personalizado, com sessões de pagamento, entrega e relatórios",
+        "roncador": "Quiz de perguntas de segurança do trabalho, com CRUD de perguntas",
+        "custom-crud": "Pacote para a automação da criação de CRUDs usando Material UI"
+      }
     },
     "contact": {
       "title": "Entre em Contato",

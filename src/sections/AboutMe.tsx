@@ -34,7 +34,7 @@ export function AboutMe() {
           <p>{t("sections.about.text1")}</p>
           <p>{t("sections.about.text2")}</p>
           <a
-            className="read-link"
+            className="redirect-link"
             target="_blank"
             href="https://juliosergiofs.medium.com/"
           >
