@@ -16,6 +16,7 @@
     "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^2.8.8",
     "@iconify/icons-emojione-v1": "^1.2.6",
+    "@iconify/icons-logos": "^1.2.23",
     "@iconify/icons-mdi": "^1.2.41",
     "@iconify/icons-skill-icons": "^1.2.1",
     "framer-motion": "^10.0.1",

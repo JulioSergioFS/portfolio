@@ -63,6 +63,10 @@
           }
         }
       },
+      "subjects": {
+        "email": "Ol%C3%A1%21",
+        "number": "Ol%C3%A1+Julio%21"
+      },
       "button": "Enviar mensagem",
       "messages": {
         "success": "Email enviado com successo",

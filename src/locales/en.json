@@ -63,6 +63,10 @@
           }
         }
       },
+      "subjects": {
+        "email": "Hello%21",
+        "number": "Hello+Julio%21"
+      },
       "button": "Send Message",
       "messages": {
         "success": "Email successfully sent",

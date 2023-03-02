@@ -87,6 +87,42 @@ button {
   }
 }
 
+.contact {
+  align-items: center;
+
+  .socials {
+    display: flex;
+    gap: 56px;
+    width: 100%;
+    justify-content: center;
+
+    @include tablet {
+      gap: 40px;
+    }
+
+    @include mobile {
+      gap: 16px;
+      flex-direction: column;
+      width: min-content !important;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      p {
+        font-size: 1.05rem;
+      }
+    }
+  }
+}
+
 .subtitle {
   text-align: center;
 }

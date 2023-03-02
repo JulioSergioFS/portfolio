@@ -1,127 +1,68 @@
-import { yupResolver } from "@hookform/resolvers/yup";
-import { useState } from "react";
-import { FormProvider, useForm } from "react-hook-form";
-import * as Yup from "yup";
+import googleGmail from "@iconify/icons-logos/google-gmail";
+import whatsappIcon from "@iconify/icons-logos/whatsapp-icon";
+import instagramIcon from "@iconify/icons-skill-icons/instagram";
+import linkedinIcon from "@iconify/icons-skill-icons/linkedin";
+import { Icon } from "@iconify/react";
+import { useEffect, useState } from "react";
 import { AnimateComponent } from "../components/AnimateComponent";
-import { RHFInput } from "../components/RHFInput";
-import { RHFTextArea } from "../components/RHFTextArea";
 import useLocales from "../hooks/useLocales";
-import useSnackbar from "../hooks/useSnackbar";
 import "../styles/sections/contact.scss";
-
-type FormValuesProps = {
-  email: string;
-  password: string;
-};
 
 export function Contact() {
   const { t } = useLocales();
-  const { openSnackbar } = useSnackbar();
-  const [showPassword, setShowPassword] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
 
-  const ContactSchema = Yup.object().shape({
-    name: Yup.string().required(
-      t("sections.contact.fields.name.errors.required")
-    ),
-    email: Yup.string()
-      .email(t("sections.contact.fields.email.errors.email"))
-      .required(t("sections.contact.fields.email.errors.required")),
-    subject: Yup.string().required(
-      t("sections.contact.fields.subject.errors.required")
-    ),
-    message: Yup.string().required(
-      t("sections.contact.fields.message.errors.required")
-    ),
-  });
+  useEffect(() => {
+    window.onresize = () => setIsMobile(window.innerWidth <= 1100);
+  }, [window.innerWidth]);
 
-  const defaultValues = {
-    name: "",
-    email: undefined,
-    subject: "",
-    message: "",
-  };
+  const socials = [
+    {
+      name: "Linkedin",
+      link: "https://www.linkedin.com/in/julio-sergio-ferreira-silva",
+      icon: <Icon icon={linkedinIcon} height={22} />,
+    },
+    {
+      name: "juliosecondary@gmail.com",
+      link: `mailto:juliosecondary@gmail.com?subject=${t(
+        "sections.contact.subjects.email"
+      )}`,
+      icon: <Icon icon={googleGmail} height={22} />,
+    },
+    {
+      name: "+55 (31) 99211-1538",
+      link: `https://wa.me/5531992111538?text=${t(
+        "sections.contact.subjects.number"
+      )}`,
+      icon: <Icon icon={whatsappIcon} height={22} />,
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/julio_sergiofs/",
+      icon: <Icon icon={instagramIcon} height={22} />,
+    },
+  ];
 
-  const methods = useForm<FormValuesProps>({
-    resolver: yupResolver(ContactSchema),
-    defaultValues,
-  });
-
-  const { reset, handleSubmit, watch } = methods;
-  const values = watch();
-
-  const onSubmit = async (data: FormValuesProps) => {
-    try {
-      if (data.email === "admin@gmail.com" && data.password === "password") {
-        openSnackbar({
-          type: "success",
-          message: t("sections.contact.messages.success") as string,
-        });
-      } else {
-        openSnackbar({
-          type: "error",
-          message: t("sections.contact.messages.error") as string,
-        });
-      }
-      console.log(data);
-    } catch (error) {
-      reset();
-    }
-  };
+  const socialsMobile = [socials[0], socials[3], socials[2], socials[1]];
 
   return (
-    <div className="content">
-      <FormProvider {...methods}>
-        <form onSubmit={handleSubmit(onSubmit)} className="form">
-          <div className="fields">
-            <AnimateComponent>
-              <h2 className="title">{t("sections.contact.title")}</h2>
-            </AnimateComponent>
-
-            <AnimateComponent>
-              <p className="text text-secondary">
-                {t("sections.contact.subtitle")}
-              </p>
-            </AnimateComponent>
-
-            <AnimateComponent className="first-row">
-              <RHFInput
-                name="name"
-                label={t("sections.contact.fields.name.label")}
-                placeholder={t("sections.contact.fields.name.placeholder")}
-                className="name"
-              />
-              <RHFInput
-                name="email"
-                label={t("sections.contact.fields.email.label")}
-                placeholder={t("sections.contact.fields.email.placeholder")}
-                className="email"
-              />
-            </AnimateComponent>
-
-            <AnimateComponent>
-              <RHFInput
-                name="subject"
-                label={t("sections.contact.fields.subject.label")}
-                placeholder={t("sections.contact.fields.subject.placeholder")}
-              />
-            </AnimateComponent>
-
-            <AnimateComponent>
-              <RHFTextArea
-                name="message"
-                label={t("sections.contact.fields.message.label")}
-                placeholder={t("sections.contact.fields.message.placeholder")}
-                className="message"
-              />
-            </AnimateComponent>
-            <AnimateComponent>
-              <button className="button-primary send" type="submit">
-                {t("sections.contact.button")}
-              </button>
-            </AnimateComponent>
-          </div>
-        </form>
-      </FormProvider>
+    <div className="content contact">
+      <AnimateComponent>
+        <h4 className="title-variant">{t("sections.contact.title")}</h4>
+      </AnimateComponent>
+      <AnimateComponent
+        variants={{
+          visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+        }}
+        className="socials"
+      >
+        {(isMobile ? socialsMobile : socials).map((social) => (
+          <a key={social.name} href={social.link} target="_blank">
+            {social.icon}
+            <p>{social.name}</p>
+          </a>
+        ))}
+      </AnimateComponent>
     </div>
   );
 }

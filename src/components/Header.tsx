@@ -1,5 +1,4 @@
 import githubIcon from "@iconify/icons-mdi/github";
-import linkedinIcon from "@iconify/icons-mdi/linkedin";
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
 import { useScrollSections } from "react-scroll-section";
@@ -40,22 +39,10 @@ export function Header({ hasBackground }: { hasBackground: boolean }) {
             <LanguagePopover />
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/julio-sergio-ferreira-silva/"
-            >
-              <Icon
-                icon={linkedinIcon}
-                color="#E3E3E3"
-                height={isMobile ? 32 : 24}
-              />
-            </a>
-          </li>
-          <li>
             <a target="_blank" href="https://github.com/JulioSergioFS/">
               <Icon
                 icon={githubIcon}
-                color="#E3E3E3"
+                color="#fefefe"
                 height={isMobile ? 32 : 24}
               />
             </a>
