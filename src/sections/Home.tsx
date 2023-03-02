@@ -5,7 +5,7 @@ import { sections } from "../constants/header";
 import useLocales from "../hooks/useLocales";
 import "../styles/sections/home.scss";
 
-export function Home({ hidden }: { hidden: boolean }) {
+export function Home({ hidden }: { hidden?: boolean }) {
   const { t } = useLocales();
   const section2 = useScrollSection(sections[1].id);
 
