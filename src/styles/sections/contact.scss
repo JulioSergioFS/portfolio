@@ -100,10 +100,12 @@ button {
 .button-primary {
   background-color: $primary-color;
   color: $button-text-color;
+  width: 100%;
 }
 
 .input {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 }

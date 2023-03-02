@@ -24,7 +24,7 @@
     ),
     url(https://imgur.com/s671HHZ.jpg);
   background-repeat: no-repeat;
-  background-size: 2500px;
+  background-size: 2400px;
 
   @keyframes spin {
     0%,
@@ -111,4 +111,8 @@
     }
     animation: up-and-down 1.5s linear infinite;
   }
+}
+
+.hidden {
+  opacity: 0;
 }

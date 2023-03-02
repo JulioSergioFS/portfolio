@@ -5,12 +5,12 @@ import { sections } from "../constants/header";
 import useLocales from "../hooks/useLocales";
 import "../styles/sections/home.scss";
 
-export function Home() {
+export function Home({ hidden }: { hidden: boolean }) {
   const { t } = useLocales();
   const section2 = useScrollSection(sections[1].id);
 
   return (
-    <div className="home content">
+    <div className={`home content${hidden ? " hidden" : ""}`}>
       <div className="info">
         <h2>{t("sections.home.title")}</h2>
         <p className="text text-secondary">{t("sections.home.subtitle")}</p>

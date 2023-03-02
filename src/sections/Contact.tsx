@@ -2,6 +2,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import * as Yup from "yup";
+import { AnimateComponent } from "../components/AnimateComponent";
 import { RHFInput } from "../components/RHFInput";
 import { RHFTextArea } from "../components/RHFTextArea";
 import useLocales from "../hooks/useLocales";
@@ -72,11 +73,17 @@ export function Contact() {
       <FormProvider {...methods}>
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <div className="fields">
-            <h2 className="title">{t("sections.contact.title")}</h2>
-            <p className="text text-secondary">
-              {t("sections.contact.subtitle")}
-            </p>
-            <div className="first-row">
+            <AnimateComponent>
+              <h2 className="title">{t("sections.contact.title")}</h2>
+            </AnimateComponent>
+
+            <AnimateComponent>
+              <p className="text text-secondary">
+                {t("sections.contact.subtitle")}
+              </p>
+            </AnimateComponent>
+
+            <AnimateComponent className="first-row">
               <RHFInput
                 name="name"
                 label={t("sections.contact.fields.name.label")}
@@ -89,21 +96,29 @@ export function Contact() {
                 placeholder={t("sections.contact.fields.email.placeholder")}
                 className="email"
               />
-            </div>
-            <RHFInput
-              name="subject"
-              label={t("sections.contact.fields.subject.label")}
-              placeholder={t("sections.contact.fields.subject.placeholder")}
-            />
-            <RHFTextArea
-              name="message"
-              label={t("sections.contact.fields.message.label")}
-              placeholder={t("sections.contact.fields.message.placeholder")}
-              className="message"
-            />
-            <button className="button-primary send" type="submit">
-              {t("sections.contact.button")}
-            </button>
+            </AnimateComponent>
+
+            <AnimateComponent>
+              <RHFInput
+                name="subject"
+                label={t("sections.contact.fields.subject.label")}
+                placeholder={t("sections.contact.fields.subject.placeholder")}
+              />
+            </AnimateComponent>
+
+            <AnimateComponent>
+              <RHFTextArea
+                name="message"
+                label={t("sections.contact.fields.message.label")}
+                placeholder={t("sections.contact.fields.message.placeholder")}
+                className="message"
+              />
+            </AnimateComponent>
+            <AnimateComponent>
+              <button className="button-primary send" type="submit">
+                {t("sections.contact.button")}
+              </button>
+            </AnimateComponent>
           </div>
         </form>
       </FormProvider>

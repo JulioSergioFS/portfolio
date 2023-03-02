@@ -8,30 +8,10 @@ import useLocales from "../hooks/useLocales";
 import "../styles/header.scss";
 import LanguagePopover from "./LanguagePopover";
 
-export function Header() {
+export function Header({ hasBackground }: { hasBackground: boolean }) {
   const { t } = useLocales();
   const scrollSection = useScrollSections();
-  const [hasBackground, setHasBackground] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
-  const offsetHeightBackground = 450;
-  const currentSection = scrollSection.filter((section) => section.selected)[0];
-
-  const changeBackgroundOnScroll = () => {
-    if (window.pageYOffset > offsetHeightBackground) {
-      setHasBackground(true);
-    } else {
-      setHasBackground(false);
-    }
-  };
-
-  useEffect(() => {
-    window.onscroll = () => {
-      changeBackgroundOnScroll();
-    };
-    return () => {
-      window.onscroll = null;
-    };
-  }, []);
 
   useEffect(() => {
     window.onresize = () => setIsMobile(window.innerWidth <= 1100);
@@ -40,19 +20,8 @@ export function Header() {
   return (
     <ul className={`header${hasBackground ? " header-background" : ""}`}>
       {isMobile ? (
-        <li
-          style={{
-            fontWeight: "bold",
-            fontSize: "1.4rem",
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          {t(
-            currentSection
-              ? sections[Number(currentSection.id) - 1].name
-              : sections[0].name
-          )}
+        <li>
+          <img src="/js.svg" alt="js logo" />
         </li>
       ) : (
         <li className="menu">
