@@ -20,7 +20,7 @@ export function Header({ hasBackground }: { hasBackground: boolean }) {
     <ul className={`header${hasBackground ? " header-background" : ""}`}>
       {isMobile ? (
         <li>
-          <img src="/js.svg" alt="js logo" />
+          <img src="js.svg" alt="js logo" />
         </li>
       ) : (
         <li className="menu">
