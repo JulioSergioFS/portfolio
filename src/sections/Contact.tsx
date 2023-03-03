@@ -7,7 +7,7 @@ import { AnimateComponent } from "../components/AnimateComponent";
 import useLocales from "../hooks/useLocales";
 import "../styles/sections/contact.scss";
 
-export function Contact({ isMobile }: { isMobile: boolean }) {
+export function Contact({ isMobile }: { isMobile?: boolean }) {
   const { t } = useLocales();
 
   const socials = [

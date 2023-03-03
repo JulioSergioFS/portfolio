@@ -4,7 +4,7 @@ import { projects } from "../constants/project";
 import useLocales from "../hooks/useLocales";
 import "../styles/sections/portfolio.scss";
 
-export function Portfolio({ isMobile }: { isMobile: boolean }) {
+export function Portfolio({ isMobile }: { isMobile?: boolean }) {
   const { t } = useLocales();
 
   return (
