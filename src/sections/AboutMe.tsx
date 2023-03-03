@@ -22,19 +22,18 @@ export function AboutMe() {
 
   return (
     <div className="content about">
-      <div className="image-container">
-        <AnimateComponent
-          variants={{
-            visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
-          }}
-        >
-          <img
-            className="my-photo"
-            src="https://i.imgur.com/dXUCZM0.png"
-            alt={t("sections.about.alt")}
-          />
-        </AnimateComponent>
-      </div>
+      <AnimateComponent
+        className="image-container"
+        variants={{
+          visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+        }}
+      >
+        <img
+          className="my-photo"
+          src="https://i.imgur.com/dXUCZM0.png"
+          alt={t("sections.about.alt")}
+        />
+      </AnimateComponent>
       <div className="text">
         <AnimateComponent
           variants={{
@@ -68,7 +67,18 @@ export function AboutMe() {
         >
           <div className="logos">
             {logos.map((logo, index) => (
-              <Icon key={index} icon={logo} height={48} />
+              <AnimateComponent
+                key={index}
+                variants={{
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                    transition: { duration: 0.5 * ((index + 1) / 4) },
+                  },
+                }}
+              >
+                <Icon key={index} icon={logo} height={48} />
+              </AnimateComponent>
             ))}
           </div>
         </AnimateComponent>

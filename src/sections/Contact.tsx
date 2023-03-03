@@ -3,18 +3,12 @@ import whatsappIcon from "@iconify/icons-logos/whatsapp-icon";
 import instagramIcon from "@iconify/icons-skill-icons/instagram";
 import linkedinIcon from "@iconify/icons-skill-icons/linkedin";
 import { Icon } from "@iconify/react";
-import { useEffect, useState } from "react";
 import { AnimateComponent } from "../components/AnimateComponent";
 import useLocales from "../hooks/useLocales";
 import "../styles/sections/contact.scss";
 
-export function Contact() {
+export function Contact({ isMobile }: { isMobile: boolean }) {
   const { t } = useLocales();
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
-
-  useEffect(() => {
-    window.onresize = () => setIsMobile(window.innerWidth <= 1100);
-  }, [window.innerWidth]);
 
   const socials = [
     {
@@ -47,22 +41,37 @@ export function Contact() {
 
   return (
     <div className="content contact">
-      <AnimateComponent>
-        <h4 className="title-variant">{t("sections.contact.title")}</h4>
-      </AnimateComponent>
       <AnimateComponent
         variants={{
-          visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.2 },
+          },
+          hidden: { opacity: 0, y: 70 },
         }}
-        className="socials"
       >
-        {(isMobile ? socialsMobile : socials).map((social) => (
-          <a key={social.name} href={social.link} target="_blank">
-            {social.icon}
-            <p>{social.name}</p>
-          </a>
-        ))}
+        <h4 className="title-variant">{t("sections.contact.title")}</h4>
       </AnimateComponent>
+      <div className="socials">
+        {(isMobile ? socialsMobile : socials).map((social, index) => (
+          <AnimateComponent
+            key={social.name}
+            variants={{
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 0.5 * ((index + 1) / 4) },
+              },
+            }}
+          >
+            <a href={social.link} target="_blank">
+              {social.icon}
+              <p className="redirect-link">{social.name}</p>
+            </a>
+          </AnimateComponent>
+        ))}
+      </div>
     </div>
   );
 }

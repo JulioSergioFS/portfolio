@@ -20,20 +20,14 @@
     flex-direction: column !important;
   }
 
-  div {
-    width: 50%;
-
-    @include mobile {
-      width: 100%;
-    }
-  }
-
   .text {
     display: flex;
     flex-direction: column;
+    width: 50%;
 
     @include mobile {
       padding-top: 24px;
+      width: 100%;
     }
 
     .text-content {
@@ -56,6 +50,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 50% !important;
+
+  @include mobile {
+    width: 100% !important;
+  }
 
   .my-photo {
     height: 320px;

@@ -1,17 +1,11 @@
-import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import { AnimateComponent } from "../components/AnimateComponent";
 import { projects } from "../constants/project";
 import useLocales from "../hooks/useLocales";
 import "../styles/sections/portfolio.scss";
 
-export function Portfolio() {
+export function Portfolio({ isMobile }: { isMobile: boolean }) {
   const { t } = useLocales();
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
-
-  useEffect(() => {
-    window.onresize = () => setIsMobile(window.innerWidth <= 1100);
-  }, [window.innerWidth]);
 
   return (
     <div className="content">

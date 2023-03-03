@@ -1,20 +1,20 @@
 import githubIcon from "@iconify/icons-mdi/github";
 import { Icon } from "@iconify/react";
-import { useEffect, useState } from "react";
 import { useScrollSections } from "react-scroll-section";
 import { sections } from "../constants/header";
 import useLocales from "../hooks/useLocales";
 import "../styles/header.scss";
 import LanguagePopover from "./LanguagePopover";
 
-export function Header({ hasBackground }: { hasBackground: boolean }) {
+export function Header({
+  hasBackground,
+  isMobile,
+}: {
+  hasBackground: boolean;
+  isMobile: boolean;
+}) {
   const { t } = useLocales();
   const scrollSection = useScrollSections();
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
-
-  useEffect(() => {
-    window.onresize = () => setIsMobile(window.innerWidth <= 1100);
-  }, [window.innerWidth]);
 
   return (
     <ul className={`header${hasBackground ? " header-background" : ""}`}>

@@ -9,6 +9,7 @@ import "./styles/global.scss";
 function App() {
   const [hidden, setHidden] = useState(false);
   const [hasBackground, setHasBackground] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 820);
   const offsetHeightBackground = 450;
 
   const hideSection1 = () => {
@@ -37,11 +38,15 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    window.onresize = () => setIsMobile(window.innerWidth <= 820);
+  }, [window.innerWidth]);
+
   return (
     <MotionLazyContainer>
       <ScrollingProvider scrollBehavior="smooth">
         <div className="app">
-          <Header hasBackground={hasBackground} />
+          <Header hasBackground={hasBackground} isMobile={isMobile} />
           <Section id="1">
             <section className="section home-section">
               <m.div
@@ -78,7 +83,11 @@ function App() {
                     height: "100%",
                   }}
                 >
-                  {section.component}
+                  {section.haveIsMobile
+                    ? React.cloneElement(section.component, {
+                        isMobile,
+                      })
+                    : section.component}
                 </section>
               </Section>
             ) : null

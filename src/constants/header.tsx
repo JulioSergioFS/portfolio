@@ -16,11 +16,13 @@ export const sections = [
     name: "header.portfolio",
     component: <Portfolio />,
     bgColor: "primary",
+    haveIsMobile: true,
   },
   {
     id: "4",
     name: "header.contact",
     component: <Contact />,
     bgColor: "secondary",
+    haveIsMobile: true,
   },
 ];
