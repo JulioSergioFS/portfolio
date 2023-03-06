@@ -22,15 +22,15 @@
       "subtitle": "Trabalhando como estagiário e desenvolvedor front-end, trabalhei em diversos projetos para diversar empresas. Segue a lista abaixo.",
       "description": {
         "courses": {
-          "text1": "Site de cursos online e vídeoaulas incluindo um blog com posts dos alunos, feito inteiro em Javascript.",
+          "text1": "Site com videoaulas incluindo um blog com posts dos alunos, feito inteiro em Javascript.",
           "text2": "A aplicação proporcionou aos alunos acesso fácil ao conteúdo e uma interface harmônica."
         },
         "smart-monitor": {
-          "text1": "Aplicação de gerenciamento de máquinário de fábricas em tempo real.",
+          "text1": "Aplicação de gerenciamento de maquinário de fábricas em tempo real.",
           "text2": "Ela facilita o gerenciamento e inspeção das máquinas pelo gestor, oferecendo estatísticas da produção."
         },
         "landing": {
-          "text1": "Página com sessões de questionário e compra feito em Material UI e usando Typeform para formulários.",
+          "text1": "Página com sessões de questionário e compra feita em Material UI e usando Typeform para formulários.",
           "text2": "A aplicação é uma excelente apresentação da empresa, e seus questionários dão insights para os que preenchem."
         },
         "ecommerce": {
