@@ -1,21 +1,18 @@
 export const projects = [
   {
-    name: "BBX",
-    smallName: "bbx",
-    image: "logos/bbx.svg",
-    url: "https://go-bbx.com/home",
+    name: "Landing Page",
+    smallName: "landing",
+    image: "logos/landing.svg",
   },
   {
-    name: "Grupo Roncador",
-    smallName: "roncador",
-    image: "logos/roncador.svg",
-    url: "http://www.gruporoncador.com.br/",
+    name: "Questionários",
+    smallName: "quiz",
+    image: "logos/questions.svg",
   },
   {
-    name: "Gonew",
-    smallName: "gonew",
-    image: "logos/gonew.png",
-    url: "https://www.gonew.co/",
+    name: "Sites de cursos online",
+    smallName: "courses",
+    image: "logos/class.svg",
   },
   {
     name: "Smart Monitor",
@@ -30,9 +27,8 @@ export const projects = [
     url: "https://www.npmjs.com/package/custom-crud-dash",
   },
   {
-    name: "Ateliê do Doce",
-    smallName: "atelie",
-    image: "logos/atelie.svg",
-    url: "https://pedidos.ateliedodoce.com.br/",
+    name: "E-commerce",
+    smallName: "ecommerce",
+    image: "logos/bag.svg",
   },
 ];

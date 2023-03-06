@@ -47,23 +47,27 @@ export function Portfolio({ isMobile }: { isMobile?: boolean }) {
           )}
         >
           {projects.map((project) => (
-            <a
-              className="card"
-              key={project.name}
-              target="_blank"
-              href={project.url}
-            >
-              <div>
-                <img className="logo" src={project.image} alt={project.name} />
-              </div>
-              <h4>{project.name}</h4>
+            <div className="card" key={project.name}>
               <div className="company-text">
-                <p className="text-secondary">
-                  {t(`sections.portfolio.description.${project.smallName}`)}
+                <img className="logo" src={project.image} alt={project.name} />
+                <h4>{project.name}</h4>
+                <p className="carousel-description">
+                  {t(
+                    `sections.portfolio.description.${project.smallName}.text1`
+                  )}
                 </p>
-                <div className="redirect-link">Visitar site</div>
+                <p className="carousel-description">
+                  {t(
+                    `sections.portfolio.description.${project.smallName}.text2`
+                  )}
+                </p>
               </div>
-            </a>
+              {project.url ? (
+                <a className="redirect-link" target="_blank" href={project.url}>
+                  {t("sections.portfolio.visit")}
+                </a>
+              ) : null}
+            </div>
           ))}
         </Carousel>
       </AnimateComponent>

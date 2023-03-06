@@ -12,8 +12,8 @@
     },
     "about": {
       "title": "About me",
-      "text1": "I am a Junior developer with almost 2 years of formal work experience seeking a new opportunity.",
-      "text2": "I have developed applications for various companies, I have experience working in a team and dealing with problems. Currently, I am deepening my knowledge in ReactJS and TypeScript.",
+      "text1": "I am a Junior developer seeking a new opportunity. I have developed applications for various companies, I have experience working in a team and dealing with problems.",
+      "text2": "Currently, I have been sharing my knowledge through articles, with published texts about programming and personal development. I am also deepening my knowledge in ReactJS and Typescript.",
       "link": "Read my articles",
       "alt": "My photo (creator of this website)"
     },
@@ -21,13 +21,32 @@
       "title": "Portfolio",
       "subtitle": "Working as an intern and front-end developer, I worked on several projects for different companies. Here is the list below.",
       "description": {
-        "gonew": "Website for online courses and video lessons including a blog with student posts",
-        "smart-monitor": "Real-time factory machinery management application",
-        "bbx": "Landing page with quiz, purchase and payment sessions",
-        "atelie": "Custom e-commerce website with payment, delivery and reports sessions",
-        "roncador": "Workplace safety quiz, with questions CRUD",
-        "custom-crud": "Package for automating the creation of CRUDs using Material UI"
-      }
+        "courses": {
+          "text1": "Online courses and video lessons website, including a blog with posts from students, entirely made in Javascript.",
+          "text2": "The application provided students with easy access to content and a harmonious interface."
+        },
+        "smart-monitor": {
+          "text1": "Real-time factory machinery management application.",
+          "text2": "It facilitates the manager's management and inspection of the machines, offering production statistics."
+        },
+        "landing": {
+          "text1": "Page with questionnaire and purchase sections made in Material UI and using Typeform for forms.",
+          "text2": "The application is an excellent presentation of the company, and its questionnaires provide insights for those who fill them out."
+        },
+        "ecommerce": {
+          "text1": "Custom e-commerce website with payment, delivery, and reports sections, made using Typescript and React Hook Forms.",
+          "text2": "The project helped automate several previously manual processes."
+        },
+        "quiz": {
+          "text1": "Workplace safety quiz with CRUD of questions and answers.",
+          "text2": "The questionnaire contributed to ensuring employees' understanding of safety."
+        },
+        "custom-crud": {
+          "text1": "Package for automating the creation of CRUDs, with tables and forms, using Material UI.",
+          "text2": "The package speeds up the creation of new CRUDs and allows high customization."
+        }
+      },
+      "visit": "Visit website"
     },
     "contact": {
       "title": "Contact Me",

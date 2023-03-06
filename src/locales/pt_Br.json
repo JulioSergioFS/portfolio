@@ -12,8 +12,8 @@
     },
     "about": {
       "title": "Sobre mim",
-      "text1": "Sou um programador Júnior com quase 2 anos de experiência de trabalho formal buscando uma nova oportunidade.",
-      "text2": "Desenvolvi aplicações para diversas empresas, tenho experiência em trabalhar em grupo e lidar com problemas. Atualmente estou aprofundando meus conhecimentos em ReactJS e Typescript.",
+      "text1": "Sou um programador Júnior buscando uma nova oportunidade. Já desenvolvi aplicações para diversas empresas, tenho experiência em trabalhar em grupo e lidar com problemas. ",
+      "text2": "Atualmente tenho compartilhado meus conhecimentos através de artigos, tendo textos publicados sobre programação e desenvolvimento pessoal. Também estou aprofundando meus conhecimentos em ReactJS e Typescript.",
       "link": "Leia meus artigos",
       "alt": "Minha foto (criador deste site)"
     },
@@ -21,13 +21,32 @@
       "title": "Portfólio",
       "subtitle": "Trabalhando como estagiário e desenvolvedor front-end, trabalhei em diversos projetos para diversar empresas. Segue a lista abaixo.",
       "description": {
-        "gonew": "Site de cursos online e vídeoaulas incluindo um blog com posts dos alunos",
-        "smart-monitor": "Aplicação de gerenciamento de máquinário de fábricas em tempo real",
-        "bbx": "Landing page com sessões de questionário, compra e pagamento",
-        "atelie": "Site de comércio eletrônico personalizado, com sessões de pagamento, entrega e relatórios",
-        "roncador": "Quiz de perguntas de segurança do trabalho, com CRUD de perguntas",
-        "custom-crud": "Pacote para a automação da criação de CRUDs usando Material UI"
-      }
+        "courses": {
+          "text1": "Site de cursos online e vídeoaulas incluindo um blog com posts dos alunos, feito inteiro em Javascript.",
+          "text2": "A aplicação proporcionou aos alunos acesso fácil ao conteúdo e uma interface harmônica."
+        },
+        "smart-monitor": {
+          "text1": "Aplicação de gerenciamento de máquinário de fábricas em tempo real.",
+          "text2": "Ela facilita o gerenciamento e inspeção das máquinas pelo gestor, oferecendo estatísticas da produção."
+        },
+        "landing": {
+          "text1": "Página com sessões de questionário e compra feito em Material UI e usando Typeform para formulários.",
+          "text2": "A aplicação é uma excelente apresentação da empresa, e seus questionários dão insights para os que preenchem."
+        },
+        "ecommerce": {
+          "text1": "Site de comércio eletrônico personalizado, com sessões de pagamento, entrega e relatórios, feito usando Typescript e React Hook Forms.",
+          "text2": "O projeto ajudou a automatizar vários processos anteriormente manuais."
+        },
+        "quiz": {
+          "text1": "Quiz de perguntas de segurança do trabalho, com CRUD de perguntas e respostas.",
+          "text2": "O questionário contribuiu para a garantia do entendimento dos funcionários quanto à segurança."
+        },
+        "custom-crud": {
+          "text1": "Pacote para a automação da criação de CRUDs, com tabelas e formulários, usando Material UI.",
+          "text2": "O pacote agiliza a criação de novos CRUDs e permite uma alta personalização."
+        }
+      },
+      "visit": "Visitar site"
     },
     "contact": {
       "title": "Entre em Contato",
