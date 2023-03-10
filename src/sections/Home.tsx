@@ -13,7 +13,7 @@ export function Home({ hidden }: { hidden?: boolean }) {
     <div className={`home content${hidden ? " hidden" : ""}`}>
       <div className="info">
         <h2>{t("sections.home.title")}</h2>
-        <p className="text text-secondary">{t("sections.home.subtitle")}</p>
+        <p className="text text-highlight">{t("sections.home.subtitle")}</p>
       </div>
       <Icon
         icon={keyboardArrowDownRounded}

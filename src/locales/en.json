@@ -7,12 +7,12 @@
   },
   "sections": {
     "home": {
-      "title": "Hi, I'm Julio!",
-      "subtitle": "I'm a front-end developer and freelancer"
+      "title": "Hi, I'm Julio",
+      "subtitle": "How can I help you?"
     },
     "about": {
       "title": "About me",
-      "text1": "I am a Junior developer seeking a new opportunity. I have developed applications for various companies, I have experience working in a team and dealing with problems.",
+      "text1": "I am a Junior developer, who has developed applications for various companies and is seeking new opportunities. I have experience with web design, working in a team and solving problems.",
       "text2": "Currently, I have been sharing my knowledge through articles, with published texts about programming and personal development. I am also deepening my knowledge in ReactJS and Typescript.",
       "link": "Read my articles",
       "alt": "My photo (creator of this website)"

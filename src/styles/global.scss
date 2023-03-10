@@ -120,6 +120,12 @@ button {
   color: $secondary-text-color;
 }
 
+.text-highlight {
+  color: $highlight-text-color;
+  font-size: 1.4rem !important;
+  font-weight: bold;
+}
+
 .redirect-link {
   cursor: pointer;
   color: $highlight-text-color;
