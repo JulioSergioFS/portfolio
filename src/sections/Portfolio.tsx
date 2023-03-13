@@ -47,10 +47,20 @@ export function Portfolio({ isMobile }: { isMobile?: boolean }) {
           )}
         >
           {projects.map((project) => (
-            <div className="card" key={project.name}>
+            <div className="card" key={project.smallName}>
               <div className="company-text">
-                <img className="logo" src={project.image} alt={project.name} />
-                <h4>{project.name}</h4>
+                <img
+                  className="logo"
+                  src={project.image}
+                  alt={t(
+                    `sections.portfolio.description.${project.smallName}.name`
+                  )}
+                />
+                <h4>
+                  {t(
+                    `sections.portfolio.description.${project.smallName}.name`
+                  )}
+                </h4>
                 <p className="carousel-description">
                   {t(
                     `sections.portfolio.description.${project.smallName}.text1`

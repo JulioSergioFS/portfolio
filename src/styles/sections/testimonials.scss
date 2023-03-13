@@ -1,0 +1,53 @@
+@use "../_variables" as *;
+@import "../media-queries";
+
+.testimonials {
+  display: flex;
+  gap: 64px;
+
+  @include mobile {
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+    gap: 16px;
+
+    .description {
+      font-size: 1.1rem;
+      color: $secondary-text-color;
+    }
+
+    .profile {
+      display: flex;
+      gap: 16px;
+      width: max-content;
+
+      .logo {
+        height: 70px;
+        border-radius: 50%;
+        padding: 3px;
+        border: 1px solid $primary-color;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+
+        .name {
+          font-size: 1.25rem;
+        }
+
+        .role {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
