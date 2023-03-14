@@ -39,6 +39,10 @@
       height: 400px;
     }
 
+    @include mobile {
+      height: 480px;
+    }
+
     .logo {
       height: 80px;
       width: auto;
