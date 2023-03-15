@@ -65,9 +65,14 @@
           "role": "Tech Lead and Full Stack Developer"
         },
         "gustavo": {
-          "text": "I strongly recommend Julio as a highly skilled and committed front-end developer. He has exceptional skills in ReactJs, Nexts Js, Material UI, and interface prototyping in Figma, always keeping the user experience in mind. Additionally, Julio is highly communicative and proactive, ensuring that all parties involved in the project are always up-to-date and in sync.",
+          "text": "I strongly recommend Julio as a highly skilled and committed front-end developer. He has exceptional skills in ReactJs, Nexts Js, Material UI, and interface prototyping in Figma, always keeping the user experience in mind. Additionally, Julio is highly communicative and proactive, ensuring that all parties involved in the project are always up-to-date and in sync. Therefore, I strongly recommend Julio as an exceptional front-end developer who will bring great value for your team and projects",
           "fullName": "Gustavo Henrique",
           "role": "Full Stack Developer"
+        },
+        "ruben": {
+          "text": "I had the opportunity to work and learn with Julio during the time we worked together. Julio is a very dedicated and attentive person, a great co-worker who relates very well with others. He always seeks to learn new things and solve problems in the best possible way. I have complete confidence in his efforts to use his front-end development knowledge, as he is a very focused professional who is always seeking to evolve.",
+          "fullName": "Ruben Micael",
+          "role": "Frontend Developer"
         }
       }
     },

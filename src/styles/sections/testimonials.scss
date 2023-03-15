@@ -2,54 +2,70 @@
 @import "../media-queries";
 
 .testimonials {
-  display: flex;
-  gap: 64px;
-
   @include mobile {
-    gap: 40px;
-    flex-direction: column;
-  }
-
-  .item {
-    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between !important;
-    gap: 16px;
+    gap: 40px;
+  }
 
-    .description {
-      font-size: 1.1rem;
-      color: $secondary-text-color;
-    }
-
-    .profile {
+  &_item {
+    &_content {
+      background-color: $primary-background-color;
+      border: 1px solid $divider-background-color;
+      border-radius: 8px;
+      text-align: left;
+      padding: 40px;
+      height: 300px !important;
+      width: 700px !important;
       display: flex;
+      flex-direction: column;
+      justify-content: space-between !important;
+      padding: 24px;
       gap: 16px;
-      width: max-content;
 
       @include mobile {
-        width: auto;
+        padding: 0;
+        background: none;
+        border: none;
+        height: max-content !important;
+        width: 100% !important;
       }
 
-      .logo {
-        height: 70px;
-        border-radius: 50%;
-        padding: 3px;
-        border: 1px solid $primary-color;
+      .description {
+        font-size: 1.1rem;
+        color: $secondary-text-color;
       }
 
-      .info {
+      .profile {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 4px;
+        gap: 16px;
+        width: max-content;
 
-        .name {
-          font-size: 1.25rem;
+        @include mobile {
+          width: auto;
         }
 
-        .role {
-          font-size: 1rem;
+        .logo {
+          height: 70px;
+          width: 70px;
+          border-radius: 50%;
+          padding: 3px;
+          border: 1px solid $primary-color;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 4px;
+
+          .name {
+            font-size: 1.25rem;
+          }
+
+          .role {
+            font-size: 1rem;
+          }
         }
       }
     }
