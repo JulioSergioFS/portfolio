@@ -35,7 +35,7 @@ export function Portfolio({ isMobile }: { isMobile?: boolean }) {
           autoPlay
           infiniteLoop
           showThumbs={false}
-          centerMode
+          centerMode={!isMobile}
           centerSlidePercentage={isMobile ? undefined : 30}
           interval={6000}
           showStatus={false}
