@@ -30,7 +30,7 @@ export function AboutMe() {
       >
         <img
           className="my-photo"
-          src="https://i.imgur.com/dXUCZM0.png"
+          src="images/eu.jpg"
           alt={t("sections.about.alt")}
         />
       </AnimateComponent>
