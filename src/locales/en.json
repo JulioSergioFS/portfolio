@@ -13,8 +13,8 @@
     },
     "about": {
       "title": "About me",
-      "text1": "I am a Junior developer, who has developed applications for various companies and is seeking new opportunities. I have experience with web design, working in a team and solving problems.",
-      "text2": "Currently, I have been sharing my knowledge through articles, with published texts about programming and personal development. I am also deepening my knowledge in ReactJS and Typescript.",
+      "text1": "I am a Junior Frontend Developer looking for new opportunities. I have developed applications for various companies, where I collaborated in the creation of landing pages, e-commerces and online course websites, which taught me a lot about the value of my work and how it can benefit my clients.",
+      "text2": "Currently, I am deepening my knowledge in ReactJS and Typescript. I also have been sharing my knowledge through articles, with published texts about programming and personal development.",
       "link": "Read my articles",
       "alt": "My photo (creator of this website)"
     },

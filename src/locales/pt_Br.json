@@ -13,8 +13,8 @@
     },
     "about": {
       "title": "Sobre mim",
-      "text1": "Sou um programador Júnior buscando novas oportunidades. Já desenvolvi aplicações para diversas empresas, tenho experiência em criar designs de sites, trabalhar em grupo e resolver problemas. ",
-      "text2": "Atualmente tenho compartilhado meus conhecimentos através de artigos, tendo textos publicados sobre programação e desenvolvimento pessoal. Também estou aprofundando meus conhecimentos em ReactJS e Typescript.",
+      "text1": "Sou um Desenvolvedor Frontend Júnior procurando por novas oportunidades. Já desenvolvi aplicações para diversas empresas, onde colaborei na criação de landing pages, e-commerces e sites de cursos online, o que me ensinou muito sobre o valor do meu trabalho e como ele pode beneficiar meus clientes.",
+      "text2": "Atualmente, estou aprofundando meus conhecimentos em ReactJS e Typescript. Também tenho compartilhado meu conhecimento por meio de artigos, com textos publicados sobre programação e desenvolvimento pessoal.",
       "link": "Leia meus artigos",
       "alt": "Minha foto (criador deste site)"
     },
