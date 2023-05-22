@@ -32,6 +32,11 @@
           "text1": "Aplicação de gerenciamento de maquinário de fábricas em tempo real.",
           "text2": "Ela facilita o gerenciamento e inspeção das máquinas pelo gestor, oferecendo estatísticas da produção."
         },
+        "foure": {
+          "name": "Forever Learning",
+          "text1": "Página de apresentação para a plataforma fictícia Forever Learning.",
+          "text2": "O site provém informações relevantes para possíveis clientes, com informações da empresa, planos e depoimentos."
+        },
         "landing": {
           "name": "Landing Page",
           "text1": "Página com sessões de questionário e compra feita em Material UI e usando Typeform para formulários.",

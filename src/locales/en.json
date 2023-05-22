@@ -32,6 +32,11 @@
           "text1": "Real-time factory machinery management application.",
           "text2": "It facilitates the manager's management and inspection of the machines, offering production statistics."
         },
+        "foure": {
+          "name": "Forever Learning",
+          "text1": "Landing page for the fictional Forever Learning platform.",
+          "text2": "The website provides relevant information to potential customers, with company information, plans and testimonials."
+        },
         "landing": {
           "name": "Landing Page",
           "text1": "Page with questionnaire and purchase sections made in Material UI and using Typeform for forms.",

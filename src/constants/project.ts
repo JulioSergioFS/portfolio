@@ -9,6 +9,11 @@ export const projects = [
     url: "https://www.npmjs.com/package/custom-crud-dash",
   },
   {
+    smallName: "foure",
+    image: "logos/foure.svg",
+    url: "https://juliosergiofs.github.io/forever-learning/",
+  },
+  {
     smallName: "quiz",
     image: "logos/questions.svg",
   },
