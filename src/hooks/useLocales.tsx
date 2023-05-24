@@ -10,12 +10,12 @@ const LANGS = [
   {
     label: "English",
     value: "en",
-    icon: <Icon icon={flagForUnitedKingdom} height="100%" />,
+    icon: <Icon icon={flagForUnitedKingdom} height={28} />,
   },
   {
     label: "Português",
     value: "pt_Br",
-    icon: <Icon icon={flagForBrazil} height="100%" />,
+    icon: <Icon icon={flagForBrazil} height={28} />,
   },
 ];
 
