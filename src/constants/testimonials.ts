@@ -14,4 +14,14 @@ export const testimonials = [
     link: "https://www.linkedin.com/in/ruben-micael-2b4261215",
     photo: "images/ruben.jpeg",
   },
+  {
+    name: "abejide",
+    link: "https://www.linkedin.com/in/abejideibukun",
+    photo: "images/abejide.jpeg",
+  },
+  {
+    name: "bryan",
+    link: "https://www.linkedin.com/in/bryanipablo",
+    photo: "images/bryan.jpeg",
+  },
 ];

@@ -13,8 +13,8 @@
     },
     "about": {
       "title": "Sobre mim",
-      "text1": "Sou um Desenvolvedor Frontend Júnior procurando por novas oportunidades. Já desenvolvi aplicações para diversas empresas, onde colaborei na criação de landing pages, e-commerces e sites de cursos online, o que me ensinou muito sobre o valor do meu trabalho e como ele pode beneficiar meus clientes.",
-      "text2": "Atualmente, estou aprofundando meus conhecimentos em ReactJS e Typescript. Também tenho compartilhado meu conhecimento por meio de artigos, com textos publicados sobre programação e desenvolvimento pessoal.",
+      "text1": "Sou um Desenvolvedor Full-Stack com foco em front-end procurando por novas oportunidades. Já desenvolvi aplicações para diversas empresas, tanto no Brasil quando no exterior, onde colaborei na criação de dashboards, e-commerces e sites de cursos online, o que me ensinou muito sobre o valor do meu trabalho e como ele pode beneficiar os clientes.",
+      "text2": "Atualmente, estou aprofundando meus conhecimentos em NextJS e Laravel. Também tenho artigos com textos publicados sobre programação e desenvolvimento pessoal.",
       "link": "Leia meus artigos",
       "alt": "Minha foto (criador deste site)"
     },
@@ -78,6 +78,16 @@
           "text": "Tive a oportunidade de trabalhar e aprender com o Júlio durante o tempo em que trabalhamos juntos. Julio é uma pessoa muito dedicada, atenciosa, ótimo companheiro de equipe, se relaciona muito bem, procura estar sempre aprendendo coisas novas e sempre solucionando os problemas da melhor forma possível. Tenho total confiança no esforço dele em usar seus conhecimentos em desenvolvimento front-end, pois é um profissional muito focado e está sempre buscando evoluir.",
           "fullName": "Ruben Micael",
           "role": "Desenvolvedor Frontend"
+        },
+        "abejide": {
+          "text": "Julio é um desenvolvedor muito inteligente, criativo e pontual. Ele também é um excelente comunicador. Gosto muito de trabalhar com ele e o recomendarei de bom grado para projetos.",
+          "fullName": "Ibukun Abejide",
+          "role": "UX Designer"
+        },
+        "bryan": {
+          "text": "Sem hesitação, recomendo Julio por suas habilidades excepcionais em desenvolvimento de software e criatividade notável. Sua abordagem inovadora para a resolução de problemas entrega consistentemente soluções elegantes e eficientes. Além disso, ele é um excelente 'team player', promovendo um ambiente colaborativo e de apoio. Trabalhar com Julio tem sido tanto inspirador quanto agradável, e estou confiante de que ele continuará a fazer um impacto significativo no campo do desenvolvimento de software.",
+          "fullName": "Bryan Pablo",
+          "role": "Estagiário"
         }
       }
     },

@@ -40,7 +40,7 @@ export function AboutMe() {
             visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
           }}
         >
-          <h2 className="title">{t("sections.about.title")}</h2>
+          <h2 className="title title-left">{t("sections.about.title")}</h2>
         </AnimateComponent>
 
         <AnimateComponent

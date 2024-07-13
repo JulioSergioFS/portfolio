@@ -13,8 +13,8 @@
     },
     "about": {
       "title": "About me",
-      "text1": "I am a Junior Full-Stack Developer with focus on front-end looking for new opportunities. I have developed applications for various companies, where I collaborated in the creation of landing pages, e-commerces and online course websites, which taught me a lot about the value of my work and how it can benefit my clients.",
-      "text2": "Currently, I am deepening my knowledge in ReactJS and Typescript. I also have been sharing my knowledge through articles, with published texts about programming and personal development.",
+      "text1": "I am a Full-Stack Developer with focus on front-end looking for new opportunities. I have developed applications for various companies, both in Brazil and abroad, where I collaborated in the creation of landing pages, e-commerces and online course websites, which taught me a lot about the value of my work and how it can benefit my clients.",
+      "text2": "Currently, I am deepening my knowledge in NextJS and Laravel. I also have articles with published texts about programming and personal development.",
       "link": "Read my articles",
       "alt": "My photo (creator of this website)"
     },
@@ -78,6 +78,16 @@
           "text": "I had the opportunity to work and learn with Julio during the time we worked together. Julio is a very dedicated and attentive person, a great co-worker who relates very well with others. He always seeks to learn new things and solve problems in the best possible way. I have complete confidence in his efforts to use his front-end development knowledge, as he is a very focused professional who is always seeking to evolve.",
           "fullName": "Ruben Micael",
           "role": "Frontend Developer"
+        },
+        "abejide": {
+          "text": "Julio is a very smart developer, He is very creative and delivers on time. He is also an excellent communicator, I really enjoy working with him and I will gladly recommend him for projects.",
+          "fullName": "Ibukun Abejide",
+          "role": "UX Designer"
+        },
+        "bryan": {
+          "text": "Without hesitation, I recommend Julio for his exceptional software development skills and remarkable creativity. His innovative approach to problem-solving consistently delivers elegant and efficient solutions. Moreover, he is a fantastic team player, fostering a collaborative and supportive environment. Working with Julio has been both inspiring and enjoyable, and I am confident he will continue to make a significant impact in the software development field.",
+          "fullName": "Bryan Pablo",
+          "role": "Intern"
         }
       }
     },
